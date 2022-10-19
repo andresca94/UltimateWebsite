@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ultimate Frisbee - Teams</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<h1>Ulimate Frisbee Teams</h1>
+		<nav>
+			<a href="index.html" >Home</a>
+			<a href="teams.html" class ="active">Teams</a>
+			<a href="history.html" >History</a>
+			<a href="usaindex.html">USA Ultimate</a>
+		</nav>
+	</header>
+	<main>
+		<aside class = "left">
+			<img class="primera" src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Ultimate_Frisbee%2C_Jul_2009_-_19.jpg" alt="Creative Common Ultimate Photo" title="By Ed Yourdon [CC BY-SA 2.0 (http://creativecommons.org/licenses/by-sa/2.0)], via Wikimedia Commons"/>
+
+			<img alt="Ultimate Frisbee Colorado Cup 2005" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Ultimate_Frisbee_Colorado_Cup_2005.jpg/512px-Ultimate_Frisbee_Colorado_Cup_2005.jpg"/>
+
+
+			<img class="ultima" src="https://farm4.staticflickr.com/3948/15409853738_7dbfbfbac7_k.jpg"  alt="Ultimate Frisbee">
+		</aside>
+		<section class = "right">
+			<h2>Add a New College Team</h2>
+			<form action="/form-handling-url" method="post">
+				<fieldset>
+				<legend>Add user</legend>
+
+				<div class="container">
+				<div style="display: flex; flex-direction:column; width: 18rem;">
+					<label for="firstName">Full name:</label>
+					<input type="text" id="firstName" name="first_name">
+				</div>
+
+				<div style="display: flex; flex-direction:column; width: 18rem;">
+					<label for="lastName">College:</label>
+					<input type="text" id="lastName" name="last_name">
+				</div>
+
+				<div style="display: flex; flex-direction:column; width: 18rem;">
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email_address">
+				</div>
+				<div  style="display: flex;">
+				<div class="cuadros" style="display: flex; flex-direction:column;">
+					<label for="role">Status:</label>
+					<select id="role" name="user_role_name">
+					<option value="student">Student</option>
+					<option value="instructor">Instructor</option>
+					<option value="guest">Guest</option>
+					</select>
+				</div>
+
+
+				<div class="cuadros" style="display: flex; flex-direction:column">
+					<label for="date">Date:</label>
+					<input type="date" id="date" name="date">
+				</div>
+				</div>
+
+				<div style="display: flex; flex-direction:column; margin-bottom: 0.5rem;width: 18rem; text-align: center;">
+					<p>Choose your city:</p>
+					<div  style="display: flex; justify-content:space-between;">
+					<input style="width: 1.5rem; height:1.2rem" type="radio" id="html" name="fav_language" value="HTML">
+					<label for="html">Atlanta</label><br>
+					<input style="width: 1.5rem; height:1.2rem" type="radio" id="css" name="fav_language" value="CSS">
+					<label for="css">New York</label><br>
+					<input style="width: 1.5rem; height:1.2rem" type="radio" id="javascript" name="fav_language" value="JavaScript">
+					<label for="javascript">Chicago</label>
+					</div>
+				</div>
+
+				<div style="display: flex; flex-direction:column; width: 18rem;">
+					<label style="text-align:left; padding-left: 0.5rem;" for="comments">Comments:</label>
+					<textarea id="comments" name="comments" style="height: 4rem; margin-bottom: 0.5rem;"></textarea>
+				</div>
+				<div style="display: flex;">
+					<input type="checkbox" id="signup" name="signup" value="Signup" style="width: 1.5rem; height:1.5rem">
+					<label for="signup" style="text-align: left;">sign up <br>for news letter</label><br>
+					<input type="checkbox" id="terms" name="terms" value="Terms" style="width: 1.5rem; height:1.5rem">
+					<label for="terms" style="text-align: left;"> agree to <br>terms and conditions</label>
+				</div>
+
+				<div style="display: flex; flex-direction:column">
+					<button type="submit">Submit</button>
+				</div>
+				</div>
+				</fieldset>
+			</form>
+			<p>This is not meant to be a comprehensive list of all the teams, just a sampling from around the United States.  I focused on the ones that I though had cools names.</p>
+		</section>
+	</main>
+
+</body>
+</html>
